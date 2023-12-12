@@ -1,0 +1,66 @@
+* {
+    font-family: 'Rokkitt', serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    
+    background-image: linear-gradient(#00000000,#00000088), url("./assets/backdrop.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    /* background-color: black; */
+    flex-basis: 4rem;
+    flex-shrink: 0;
+}
+
+main {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-block: 2rem;
+    margin-inline: 20%;
+}
+
+main > p {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 4px black;
+}
+
+.big-text {
+    font-size: 24pt;
+}
+
+.box {
+    margin: 2rem;
+    background-image: linear-gradient(150deg,#ffffff88,#00000044);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+footer {
+    /* background-color: black; */
+    color: white;
+    flex-basis: 2rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+}
